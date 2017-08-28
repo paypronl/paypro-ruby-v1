@@ -17,7 +17,13 @@ jobs:
       # run tests!
       - run:
           name: run tests
-          command: bundle exec rspec
+          command: |
+            mkdir /tmp/test-results
+            
+            bundle exec rspec --format progress \
+                            --format RspecJunitFormatter \
+                            --out /tmp/test-results/rspec.xml \
+                            --format progress
 
       # collect reports
       - store_test_results:
