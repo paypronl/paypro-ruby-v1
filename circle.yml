@@ -1,0 +1,6 @@
+dependencies:
+  pre:
+    - gem install bundler rake
+test:
+  post:
+    - bundle exec rubocop
