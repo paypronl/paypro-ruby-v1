@@ -1,0 +1,20 @@
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+    - "public/**/*"
+  TargetRubyVersion: 2.4
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+Style/FrozenStringLiteralComment:
+  Description: 'Ruby 3.0 transition for frozen string literals'
+  Enabled: false
+Style/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
