@@ -1,9 +1,6 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.4.1
-    
+  base:
     working_directory: ~/repo
 
     steps:
@@ -15,10 +12,9 @@ jobs:
             bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - run:
-          name: rubocop
+          name: run rubocop
           command: bundle exec rubocop
 
-      # run tests!
       - run:
           name: run tests
           command: |
@@ -28,9 +24,26 @@ jobs:
                             --out /tmp/test-results/rspec.xml \
                             --format progress
 
-      # collect reports
       - store_test_results:
           path: /tmp/test-results
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
+  build-ruby-2.4.1:
+    requires:
+      - base
+    docker:
+      - image: circleci/ruby:2.4.1
+    
+  build-ruby-2.3.3:
+    requires:
+      - base
+    docker:
+      - image: circleci/ruby:2.3.3
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build-ruby-2.4.1
+      - build-ruby-2.3.3
