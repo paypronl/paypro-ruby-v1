@@ -1,5 +1,5 @@
 ![PayPro](https://paypro.nl/images/logo-ie.png)
-Ruby Client for PayPro API v1
+# Ruby Client for PayPro API v1
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This library provides a Ruby client to connect with the PayPro API.
