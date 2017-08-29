@@ -1,6 +1,8 @@
 ![PayPro](https://paypro.nl/images/logo-ie.png)
 # Ruby Client for PayPro API v1
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Gem Version](https://badge.fury.io/rb/paypro.svg)](https://badge.fury.io/rb/paypro)
+[![circleci](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/paypronl/paypro-ruby-v1)
 
 This library provides a Ruby client to connect with the PayPro API.
 
