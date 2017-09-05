@@ -22,6 +22,8 @@ $ gem install paypro
 if you'd rather install PayPro using `bundler` you can put this in your Gemfile:
 
 ```ruby
+source 'https://rubygems.org'
+
 gem 'paypro'
 ```
 
