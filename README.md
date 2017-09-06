@@ -19,7 +19,7 @@ Installation is pretty standard:
 $ gem install paypro
 ```
 
-if you'd rather install PayPro using `bundler` you can put this in your Gemfile:
+if you'd rather install the PayPro client using `bundler` you can put this in your Gemfile:
 
 ```ruby
 source 'https://rubygems.org'
@@ -27,7 +27,7 @@ source 'https://rubygems.org'
 gem 'paypro'
 ```
 
-Or directly from the Github repository:
+Or directly from the GitHub repository:
 
 ```ruby
 gem 'paypro', git: 'https://github.com/paypronl/paypro-ruby-v1'
