@@ -13,7 +13,25 @@ This library provides a Ruby client to connect with the PayPro API.
 
 ## Installation
 
-We provide an installation guide on https://paypro.nl/developers/api-clients/ruby.
+Installation is pretty standard:
+
+```sh
+$ gem install paypro
+```
+
+if you'd rather install the PayPro client using `bundler` you can put this in your Gemfile:
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'paypro'
+```
+
+Or directly from the GitHub repository:
+
+```ruby
+gem 'paypro', git: 'https://github.com/paypronl/paypro-ruby-v1'
+```
 
 ## Getting started
 
