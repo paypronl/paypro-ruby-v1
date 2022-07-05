@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module PayPro
   # Client class to connect to the PayPro V1 API.
   # Requires an API key to authenticate API calls, you
