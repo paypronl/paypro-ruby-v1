@@ -7,13 +7,10 @@ AllCops:
     - "log/**/*"
     - "public/**/*"
   TargetRubyVersion: 2.4
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: true
   Max: 120
-Style/FrozenStringLiteralComment:
-  Description: 'Ruby 3.0 transition for frozen string literals'
-  Enabled: false
-Style/BlockLength:
+Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
     - '**/*.rake'

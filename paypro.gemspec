@@ -1,4 +1,6 @@
-require File.expand_path('../lib/paypro/version', __FILE__)
+# frozen_string_literal: true
+
+require File.expand_path('lib/paypro/version', __dir__)
 
 Gem::Specification.new do |s|
   s.name = 'paypro'
@@ -9,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = 'support@paypro.nl'
   s.summary = 'Ruby client for PayPro API v1'
 
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.4.0'
   s.add_dependency 'faraday', '>= 0.13', '< 2'
 
   s.add_development_dependency 'rspec', '~> 3.6'
