@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary = 'Ruby client for PayPro API v1'
 
   s.required_ruby_version = '>= 2.0.0'
-  s.add_dependency 'faraday', '~> 0.13'
+  s.add_dependency 'faraday', '>= 0.13', '< 2'
 
   s.add_development_dependency 'rspec', '~> 3.6'
 
