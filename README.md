@@ -1,4 +1,4 @@
-![PayPro](https://paypro.nl/images/logo-ie.png)
+![PayPro](https://www.paypro.nl/images/logo-ie.png)
 # Ruby Client for PayPro API v1
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Gem Version](https://badge.fury.io/rb/paypro.svg)](https://badge.fury.io/rb/paypro)
@@ -9,7 +9,7 @@ This library provides a Ruby client to connect with the PayPro API.
 
 ## Requirements
 
- - Ruby >= 2.0.0
+ - Ruby >= 2.4.0
 
 ## Installation
 
@@ -48,7 +48,7 @@ client.execute
 
 ## Documentation
 
-For guides and code examples you can go to https://paypro.nl/developers/docs.
+For guides and code examples you can go to https://www.paypro.nl/developers/docs.
 
 ## Contributing
 If you want to contribute to this project you can fork the repository. Create a new branch, add your feature and create a pull request. We will look at your request and determine if we want to add it.
