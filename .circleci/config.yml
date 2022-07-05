@@ -35,12 +35,12 @@ jobs:
   build-ruby-3_1_2:
     <<: *defaults
     docker:
-      - image: circleci/ruby:3.1.2
+      - image: cimg/ruby:3.1.2
 
   build-ruby-3_0_4:
     <<: *defaults
     docker:
-      - image: circleci/ruby:3.0.4
+      - image: cimg/ruby:3.0.4
 
   build-ruby-2_7_6:
     <<: *defaults
